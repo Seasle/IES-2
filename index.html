@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа 2</title>
+    <link rel="stylesheet" href="./Styles/main.css">
+</head>
+<body>
+    <section class="container">
+        <div class="container__description">
+            <p class="container__text">Возможные вопросы:</p>
+            <ul class="container__list">
+                <li class="container__list-item">Сколько людей проживает в <strong>городе</strong> <span class="container__mark">Талгар</span></li>
+                <li class="container__list-item">Количество населения города <span class="container__mark">Талгар</span></li>
+                <li class="container__list-item">Количество людей в <span class="container__mark">Алакольский район</span></li>
+                <li class="container__list-item">Площадь <span class="container__mark">Алакольский район</span></li>
+                <li class="container__list-item">Какой размер <span class="container__mark">Алакольский район</span></li>
+            </ul>
+            <p class="container__text">У вопросов могут быть различные вариации. В блоки обернуты <span class="container__mark">константы</span>.</p>
+            <button class="container__button" data-control="toggle-columns"></button>
+            <div class="container__columns container__columns--hidden" data-container="columns">
+                <div class="container__column">
+                    <p class="container__text">Районы:</p>
+                    <ul class="container__list" data-container="regions-list"></ul>
+                </div>
+                <div class="container__column">
+                    <p class="container__text">Города:</p>
+                    <ul class="container__list" data-container="cities-list"></ul>
+                </div>
+            </div>
+        </div>
+        <div class="container__wrapper">
+            <div class="container__wrapper-icon container__wrapper-icon--hidden" data-container="spinner"></div>
+            <input type="text" class="container__input" placeholder="Введите Ваш вопрос" data-control="input">
+        </div>
+        <p class="container__response" data-container="response"></p>
+    </section>
+    <script type="module" src="./Scripts/main.js"></script>
+</body>
+</html>
