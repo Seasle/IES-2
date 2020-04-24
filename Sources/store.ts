@@ -40,7 +40,7 @@ const regions: Region[] = [
 
 const cities: City[] = [
     new City('Жаркент', 42617),
-    new City('Капшагай‎', 61767),
+    new City('Капшагай', 61767),
     new City('Талгар', 42810),
     new City('Талдыкорган', 145403),
     new City('Текели', 31958)
